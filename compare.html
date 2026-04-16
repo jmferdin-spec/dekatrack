@@ -131,7 +131,7 @@ laps.push({
 name:decodeURIComponent(f[0]||''),
 dur:parseInt(f[1])||0,
 hr:parseInt(f[2])||0,
-type:parseInt(f[3])||1,
+type:f[3]!==undefined?parseInt(f[3]):1,
 dist:parseInt(f[4])||0
 });
 }

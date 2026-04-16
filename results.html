@@ -151,7 +151,7 @@ function init() {
                 var name = decodeURIComponent(parts[0] || '').replace(/\+/g, ' ');
                 var dur = parseInt(parts[1]) || 0;
                 var hr = parseInt(parts[2]) || 0;
-                var tp = parseInt(parts[3]) || 1;
+                var tp = parts[3] !== undefined ? parseInt(parts[3]) : 1;
                 var dist = parseInt(parts[4]) || 0;
                 cumul += dur;
 
